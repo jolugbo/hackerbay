@@ -1,8 +1,9 @@
 HackerBay.io backend interview
 =========
 
-Run the application : simply use nodemon to run the application
+Run the application : 
 ==================
+simply use nodemon to run the application
 
 Description
 ======
@@ -15,3 +16,6 @@ jsonpatch used to create json api response
 
 jimp module was used for the image resize
 
+Test
+=====
+test samples where made with the post man and details can be found in the test folder
