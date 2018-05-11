@@ -1,0 +1,102 @@
+{
+	"id": "41802ad2-5284-123c-106c-782ddc182215",
+	"name": "hackerbay",
+	"description": "",
+	"order": [
+		"5fc5916a-a2ea-5338-935c-ad01294551a8",
+		"4fae4cee-84f3-20f7-5a73-770d2f25c70e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "2536062",
+	"public": false,
+	"requests": [
+		{
+			"id": "4fae4cee-84f3-20f7-5a73-770d2f25c70e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/resizeAction",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "41802ad2-5284-123c-106c-782ddc182215",
+			"data": [
+				{
+					"key": "filetoupload",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "resizeActionAPI",
+			"description": "Action to handle img resize, requires a image file parameter value for the filetoupload value along with the initially generated token in the file to upload",
+			"descriptionFormat": "html",
+			"time": 1526074363837,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "bearerAuth",
+			"helperAttributes": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUGF0Y2giOnt9LCJpYXQiOjE1MjYwNzE1ODV9.tNTPPnknVHar3Ymz7xfJJyidv3Wmm_-ABGSfOUtrBIE"
+			}
+		},
+		{
+			"id": "5fc5916a-a2ea-5338-935c-ad01294551a8",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/authenticate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "test",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "test",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "bearerAuth",
+			"helperAttributes": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUGF0Y2giOnsidXNlcm5hbWUiOiJBdmFudGVBZG1pbiIsInBhc3N3b3JkIjoic2EifSwiaWF0IjoxNTI1OTA4NDk0fQ.UQDd2M5q5GXs4uzy6tML2gbMtRgKyLRLGHRE5m9E3q8"
+			},
+			"time": 1526073520547,
+			"name": "autenticationAPI",
+			"description": "",
+			"collectionId": "41802ad2-5284-123c-106c-782ddc182215",
+			"responses": []
+		}
+	]
+}
